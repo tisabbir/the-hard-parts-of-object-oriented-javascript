@@ -1,12 +1,17 @@
-function UserCreator(name, score){
- this.name = name;
- this.score = score;
+function userCreator (name, score){
+    this.name = name;
+    this.score = score;
 }
-UserCreator.prototype.increment = function(){
- this.score++;
+
+userCreator.prototype.increment = function(){
+    this.score++;
 };
-UserCreator.prototype.login = function(){
- console.log("login");
-};
-const user1 = new UserCreator(“Eva”, 9)
-user1.increment()
+
+userCreator.prototype.login = function(){
+    console.log('logged in');
+}
+
+const user1 = new userCreator('sabbir', 10);
+console.log(user1.score);
+user1.increment();
+console.log(user1.score);
