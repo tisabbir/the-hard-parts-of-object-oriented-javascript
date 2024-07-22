@@ -11,3 +11,8 @@ function multiplyBy2(input) {
 const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 
 console.log(result);
+
+const divideByThree = input => input / 3;
+
+const takeArrayDivideEachElementWithThree = copyArrayAndManipulate([3,6,9], divideByThree);
+console.log(takeArrayDivideEachElementWithThree);
