@@ -4,3 +4,5 @@ const user3 = Object.create(null);
  user3.increment = function() {
   user3.score++;
  };
+
+ console.log(user3);
